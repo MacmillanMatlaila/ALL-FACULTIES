@@ -14,26 +14,25 @@ html {
 
 body {
     background: #ccc;
-    margin: 30px 40px;
+    margin: 0;
     line-height: 1.4;
 }
 
 
 
-img {
-    max-width: 100%;
-}
 
 .wrapper {
     display: grid;
     grid-gap: 5px;
-    margin: 30px 40px;
+    margin-left: 35px;
+    margin-right: 35px;
     line-height: 1.4;
+    
 }
 
 .nav{
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     
 }
@@ -41,22 +40,21 @@ img {
 .nav-items{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    grid-gap: 10px;
-    padding: 15px;
+    grid-gap: 5px;
+    padding: 5px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 18px;
     /*box-shadow: var(--shadow);
     border-radius: 40px;*/
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: auto;
 
 }
 
@@ -90,7 +88,7 @@ nav a:hover {
 .faculty{
     font-weight: 400;
     color: black;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 25px;
     font-family (stack):cera-round-pro, "Helvetica Neue", Helvetica, Arial, sans-serif
 
@@ -100,7 +98,7 @@ nav a:hover {
 
 .faculty:hover {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 17px;
 }
 
 
@@ -133,7 +131,7 @@ ul {
 }
 
 .footer-col h4 {
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -157,7 +155,7 @@ ul {
 }
 
 .footer-col ul li a {
-    font-size: 16px;
+    font-size: 12px;
     text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
@@ -211,24 +209,14 @@ ul {
             'top-box-a top-box-b';
     }
 
-    .showcase h1 {
-        font-size: 2.5rem;
-    }
+    
 
-    .main-nav ul {
+    .nav ul {
         grid-template-columns: 1fr;
     }
 
-    .info {
-        grid-template-columns: 1fr;
-    }
+}  
 
-    .info .btn {
-        display: block;
-        text-align: center;
-        margin: auto;
-    }
-}
 
 @media (max-width: 500px) {
     .top-container {
@@ -237,5 +225,18 @@ ul {
             'top-box-a'
             'top-box-b';
     }
-}
+
+    .wrapper{
+        margin: 20px 35px;
+        width: 80%;
+    }
+
+    .nav{
+        margin: auto;
+    }
+
+        
+        
+    
+    }
 
